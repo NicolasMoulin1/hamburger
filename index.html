@@ -84,9 +84,68 @@
         </div>
       </section>
 
-      <section class="contact" id="Contact">
-        <h2>Contact</h2>
-        <p>Contactez-nous...</p>
+      <section class="contact-section" id="Contact">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-intro">
+          We offer full-service catering for any event, large or small. We
+          understand your needs and we will cater the food to satisfy the
+          biggerst criteria of them all, both look and taste. Do not hesitate to
+          contact us.
+        </p>
+        <p class="contact-adress">
+          Catering Service, 42nd Living St, 43043 New York, NY
+        </p>
+        <p class="contact-details">
+          You can also contact us by phone
+          <a class="contact-link" href="00553123-2323"></a>
+          or email
+          <a class="contact-link" href="catering@catering.com"></a>
+          or you can send us a message here:
+        </p>
+        <!-- Formulaire de contact -->
+        <form class="contact-form" action="#" method="post">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label class="form-label" for="people">How many people</label>
+          <input
+            class="form-input"
+            type="number"
+            id="people"
+            name="people"
+            min="1"
+            required
+          />
+
+          <label class="form-label" for="datatime">Date and time</label>
+          <input
+            class="form-input"
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+            value="2020-11-16T20:00"
+            required
+          />
+
+          <label class="form-label" for="message"
+            >Message / Special requirements</label
+          >
+          <textarea
+            class="form-textarea"
+            id="message"
+            name="message"
+            row="4"
+            required
+          ></textarea>
+
+          <button class="form-button" type="submit">Send Message</button>
+        </form>
       </section>
     </main>
     <footer></footer>
