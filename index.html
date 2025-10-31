@@ -12,19 +12,33 @@
     />
   </head>
   <body>
-    <header class="site-header">
-      <h1 class="site-title">Gourmet au Catering</h1>
-      <div class="main-nav" class="navBar">
-        <a class="nav-link" href="#About">About</a>
-        <a class="nav-link" href="#Menu">Menu</a>
-        <a class="nav-link" href="#Contact">Contact</a>
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-white w3-padding w3-card"
+        style="letter-spacing: 4px"
+      >
+        <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+      </div>
+    </div>
+    <header>
+      <img
+        class="w3-image"
+        src="https://www.w3schools.com/w3images/hamburger.jpg"
+        alt="Hamburger Catering"
+        width="1600"
+        height="800"
+      />
+      <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+        <h1 class="w3-xxlarge">Le Catering</h1>
       </div>
     </header>
     <main>
-      <section class="imageLoader">
-        <img src="./assets/images/hamburger.jpeg" alt="image d'un hamburger" />
-        <h1 class="titleLoader">Le Catering</h1>
-      </section>
       <section class="about-section" id="About">
         <img class="about-image" src="./assets/images/tablesetting2.jpeg" />
         <h1 class="about-title">About Catering</h1>
@@ -84,9 +98,68 @@
         </div>
       </section>
 
-      <section class="contact" id="Contact">
-        <h2>Contact</h2>
-        <p>Contactez-nous...</p>
+      <section class="contact-section" id="Contact">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-intro">
+          We offer full-service catering for any event, large or small. We
+          understand your needs and we will cater the food to satisfy the
+          biggerst criteria of them all, both look and taste. Do not hesitate to
+          contact us.
+        </p>
+        <p class="contact-adress">
+          Catering Service, 42nd Living St, 43043 New York, NY
+        </p>
+        <p class="contact-details">
+          You can also contact us by phone
+          <a class="contact-link" href="00553123-2323"></a>
+          or email
+          <a class="contact-link" href="catering@catering.com"></a>
+          or you can send us a message here:
+        </p>
+        <!-- Formulaire de contact -->
+        <form class="contact-form" action="#" method="post">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label class="form-label" for="people">How many people</label>
+          <input
+            class="form-input"
+            type="number"
+            id="people"
+            name="people"
+            min="1"
+            required
+          />
+
+          <label class="form-label" for="datatime">Date and time</label>
+          <input
+            class="form-input"
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+            value="2020-11-16T20:00"
+            required
+          />
+
+          <label class="form-label" for="message"
+            >Message / Special requirements</label
+          >
+          <textarea
+            class="form-textarea"
+            id="message"
+            name="message"
+            row="4"
+            required
+          ></textarea>
+
+          <button class="form-button" type="submit">Send Message</button>
+        </form>
       </section>
     </main>
     <footer></footer>
