@@ -3,11 +3,13 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-     <title>Hamburger</title>
+    <title>Hamburger</title>
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-  
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Karma"
+    />
   </head>
   <body>
     <div class="w3-top">
@@ -34,6 +36,134 @@
       
       
     </header>
+    <main>
+      <section class="imageLoader">
+        <img src="./assets/images/hamburger.jpeg" alt="image d'un hamburger" />
+        <h1 class="titleLoader">Le Catering</h1>
+      </section>
+      <section class="about-section" id="About">
+        <img class="about-image" src="./assets/images/tablesetting2.jpeg" />
+        <h1 class="about-title">About Catering</h1>
+        <h2 class="about-subtitle">Tradition since 1889</h2>
+        <p class="about-text">
+          The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
+          sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only
+          use seasonal ingredients.
+        </p>
+        <p class="about-text">
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum consectetur adipiscing
+          elit, sed do eiusmod temporincididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
+
+      <section class="menu-section" id="Menu">
+        <h2>our Menu</h2>
+        <img class="menu-image" src="./assets/images/tablesetting.jpeg" />
+        <div class="menu-item">
+          <h3 class="menu-item-name">Bread Basket</h3>
+          <p class="menu-item-description">
+            Assortment of fresh baked fruit breads and muffins 5.50
+          </p>
+        </div>
+        <div class="menu-item">
+          <h3 class="menu-item-name">Honey Almond Granola with Fruits</h3>
+          <p class="menu-item-description">
+            Natural cereal of honey toasted oats, raisins, almonds and dates
+            7.00
+          </p>
+        </div>
+        <div class="menu-item">
+          <h3 class="menu-item-name">Belgian Waffle</h3>
+          <p class="menu-item-description">
+            Vanilla flavored batter with malted flour 7.50
+          </p>
+        </div>
+        <div class="menu-item">
+          <h3 class="menu-item-name">Scrambled eggs</h3>
+          <p class="menu-item-description">
+            Scrambled eggs, roasted red pepper and garlic, with green onions
+            7.50
+          </p>
+        </div>
+        <div class="menu-item">
+          <h3 class="menu-item-name">Blueberry Pancakes</h3>
+          <p class="menu-item-description">
+            With syrup, butter and lots of berries 8.50
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-section" id="Contact">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-intro">
+          We offer full-service catering for any event, large or small. We
+          understand your needs and we will cater the food to satisfy the
+          biggerst criteria of them all, both look and taste. Do not hesitate to
+          contact us.
+        </p>
+        <p class="contact-adress">
+          Catering Service, 42nd Living St, 43043 New York, NY
+        </p>
+        <p class="contact-details">
+          You can also contact us by phone
+          <a class="contact-link" href="00553123-2323"></a>
+          or email
+          <a class="contact-link" href="catering@catering.com"></a>
+          or you can send us a message here:
+        </p>
+        <!-- Formulaire de contact -->
+        <form class="contact-form" action="#" method="post">
+          <label class="form-label" for="name">Name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            required
+          />
+
+          <label class="form-label" for="people">How many people</label>
+          <input
+            class="form-input"
+            type="number"
+            id="people"
+            name="people"
+            min="1"
+            required
+          />
+
+          <label class="form-label" for="datatime">Date and time</label>
+          <input
+            class="form-input"
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+            value="2020-11-16T20:00"
+            required
+          />
+
+          <label class="form-label" for="message"
+            >Message / Special requirements</label
+          >
+          <textarea
+            class="form-textarea"
+            id="message"
+            name="message"
+            row="4"
+            required
+          ></textarea>
+
+          <button class="form-button" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
