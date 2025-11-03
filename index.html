@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>Hamburger</title>
+    <title>Gourmet au Catering</title>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Karma"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <div class="w3-top">
       <div
         class="w3-bar w3-white w3-padding w3-card"
         style="letter-spacing: 4px"
       >
         <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
-        <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
           <a href="#about" class="w3-bar-item w3-button">About</a>
           <a href="#menu" class="w3-bar-item w3-button">Menu</a>
@@ -26,19 +30,24 @@
         </div>
       </div>
     </div>
-    <header>
+
+    <!-- Header -->
+    <header id="home">
       <img
         class="w3-image"
         src="https://www.w3schools.com/w3images/hamburger.jpg"
         alt="Hamburger Catering"
-        width="1600"
-        height="800"
       />
-     
     </header>
+
     <main>
-      <section class="about-section" id="About">
-        <img class="about-image" src="./assets/images/tablesetting2.jpeg" />
+      <!-- Section About -->
+      <section class="about-section" id="about">
+        <img 
+          class="about-image" 
+          src="https://www.w3schools.com/w3images/tablesetting2.jpg" 
+          alt="Table Setting" 
+        />
         <h1 class="about-title">About Catering</h1>
         <h2 class="about-subtitle">Tradition since 1889</h2>
         <p class="about-text">
@@ -47,7 +56,7 @@
           do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. We only
           use seasonal ingredients.
         </p>
         <p class="about-text">
@@ -59,35 +68,43 @@
         </p>
       </section>
 
-      <section class="menu-section" id="Menu">
-        <h2>our Menu</h2>
-        <img class="menu-image" src="./assets/images/tablesetting.jpeg" />
+      <!-- Section Menu -->
+      <section class="menu-section" id="menu">
+        <h2>Our Menu</h2>
+        <img 
+          class="menu-image" 
+          src="https://www.w3schools.com/w3images/tablesetting.jpg" 
+          alt="Menu" 
+        />
+        
         <div class="menu-item">
           <h3 class="menu-item-name">Bread Basket</h3>
           <p class="menu-item-description">
             Assortment of fresh baked fruit breads and muffins 5.50
           </p>
         </div>
+
         <div class="menu-item">
           <h3 class="menu-item-name">Honey Almond Granola with Fruits</h3>
           <p class="menu-item-description">
-            Natural cereal of honey toasted oats, raisins, almonds and dates
-            7.00
+            Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
           </p>
         </div>
+
         <div class="menu-item">
           <h3 class="menu-item-name">Belgian Waffle</h3>
           <p class="menu-item-description">
             Vanilla flavored batter with malted flour 7.50
           </p>
         </div>
+
         <div class="menu-item">
-          <h3 class="menu-item-name">Scrambled eggs</h3>
+          <h3 class="menu-item-name">Scrambled Eggs</h3>
           <p class="menu-item-description">
-            Scrambled eggs, roasted red pepper and garlic, with green onions
-            7.50
+            Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
           </p>
         </div>
+
         <div class="menu-item">
           <h3 class="menu-item-name">Blueberry Pancakes</h3>
           <p class="menu-item-description">
@@ -96,12 +113,13 @@
         </div>
       </section>
 
-      <section class="contact-section" id="Contact">
+      <!-- Section Contact -->
+      <section class="contact-section" id="contact">
         <h2 class="contact-title">Contact</h2>
         <p class="contact-intro">
           We offer full-service catering for any event, large or small. We
           understand your needs and we will cater the food to satisfy the
-          biggerst criteria of them all, both look and taste. Do not hesitate to
+          biggest criteria of them all, both look and taste. Do not hesitate to
           contact us.
         </p>
         <p class="contact-adress">
@@ -109,11 +127,12 @@
         </p>
         <p class="contact-details">
           You can also contact us by phone
-          <a class="contact-link" href="00553123-2323"></a>
+          <a class="contact-link" href="tel:005531232323">00553123-2323</a>
           or email
-          <a class="contact-link" href="catering@catering.com"></a>
+          <a class="contact-link" href="mailto:catering@catering.com">catering@catering.com</a>,
           or you can send us a message here:
         </p>
+
         <!-- Formulaire de contact -->
         <form class="contact-form" action="#" method="post">
           <label class="form-label" for="name">Name</label>
@@ -122,6 +141,7 @@
             type="text"
             id="name"
             name="name"
+            placeholder="Enter your name"
             required
           />
 
@@ -132,27 +152,27 @@
             id="people"
             name="people"
             min="1"
+            placeholder="Number of guests"
             required
           />
 
-          <label class="form-label" for="datatime">Date and time</label>
+          <label class="form-label" for="datetime">Date and time</label>
           <input
             class="form-input"
             type="datetime-local"
             id="datetime"
             name="datetime"
-            value="2020-11-16T20:00"
+            value="2025-11-16T20:00"
             required
           />
 
-          <label class="form-label" for="message"
-            >Message / Special requirements</label
-          >
+          <label class="form-label" for="message">Message / Special requirements</label>
           <textarea
             class="form-textarea"
             id="message"
             name="message"
-            row="4"
+            rows="4"
+            placeholder="Your message or special requirements..."
             required
           ></textarea>
 
@@ -160,6 +180,10 @@
         </form>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
   </body>
 </html>

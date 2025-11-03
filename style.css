@@ -1,8 +1,278 @@
+
 body {
-  font-family: "Times New Roman", Georgia, Serif;
+  font-family: "Karma", "Times New Roman", Georgia, Serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
   letter-spacing: 5px;
+  font-weight: 400;
+}
+
+/* ====================================
+   HEADER
+   ==================================== */
+
+header {
+  position: relative;
+  margin-top: 60px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ====================================
+   SECTION ABOUT
+   ==================================== */
+
+.about-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 30px;
+  opacity: 0.75;
+}
+
+.about-title {
+  font-size: 48px;
+  margin: 30px 0 10px;
+  text-transform: capitalize;
+}
+
+.about-subtitle {
+  font-size: 24px;
+  color: #757575;
+  margin: 10px 0 30px;
+  font-weight: 300;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+/* ====================================
+   SECTION MENU
+   ==================================== */
+
+.menu-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.menu-section h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.menu-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto 50px;
+  opacity: 0.75;
+}
+
+.menu-item {
+  border-bottom: 1px solid #ddd;
+  padding: 25px 0;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #f9f9f9;
+  padding-left: 10px;
+}
+
+.menu-item-name {
+  font-size: 24px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.menu-item-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ====================================
+   SECTION CONTACT
+   ==================================== */
+
+.contact-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.contact-intro,
+.contact-adress,
+.contact-details {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin: 20px 0;
+}
+
+.contact-adress {
+  color: #2196F3;
+  font-weight: bold;
+}
+
+.contact-link {
+  color: #2196F3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  color: #0d7ac7;
+}
+
+/* ====================================
+   FORMULAIRE
+   ==================================== */
+
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto 0;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  display: block;
+  font-size: 16px;
+  margin: 20px 0 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #2196F3;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #555;
+}
+
+/* ====================================
+   FOOTER
+   ==================================== */
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====================================
+   RESPONSIVE
+   ==================================== */
+
+@media (max-width: 768px) {
+  .about-title,
+  .menu-section h2,
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .about-subtitle {
+    font-size: 20px;
+  }
+
+  .about-text,
+  .contact-intro,
+  .contact-details {
+    font-size: 16px;
+  }
+
+  .menu-item-name {
+    font-size: 20px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-section {
+    padding: 40px 20px;
+  }
 }
